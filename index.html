@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Yummylicious</title>
+    <title>Yummylicious - Restoran Digital</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
@@ -116,7 +116,7 @@
             transition: all 0.3s;
             position: relative;
             padding: 5px 0;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            text-shadow: none;
         }
 
         .nav-links a::after {
@@ -146,7 +146,7 @@
         }
 
         .nav-icons .icon-btn {
-            background: rgba(255,255,255,0.2);
+            background: rgba(0,0,0,0.3);
             border: none;
             width: 42px;
             height: 42px;
@@ -250,7 +250,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.45);
+            background: rgba(0, 0, 0, 0.2);
             z-index: 2;
         }
 
@@ -272,7 +272,7 @@
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
-            text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            text-shadow: none;
             margin-bottom: 20px;
         }
 
@@ -281,7 +281,8 @@
             font-size: 1.2rem;
             letter-spacing: 2px;
             margin-bottom: 0px;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            text-shadow: none;
+            font-weight: 400;
         }
 
         .scroll-indicator {
@@ -294,6 +295,7 @@
             font-size: 1.5rem;
             animation: bounce 2s infinite;
             cursor: pointer;
+            text-shadow: none;
         }
 
         @keyframes bounce {
@@ -825,7 +827,6 @@
         /* ============================================ */
         /* ============ RESPONSIVE STYLES ============ */
         /* ============================================ */
-        /* Tampilan Desktop (di atas 1200px) TETAP SAMA */
 
         /* Laptop (1024px - 1199px) */
         @media (max-width: 1199px) {
@@ -1262,30 +1263,30 @@
     // ======================= DATA MENU (LENGKAP SESUAI PERMINTAAN) =======================
     const menuData = {
         makanan: [
-            { id: 1, name: "Nasi Goreng Spesial", price: 28000, desc: "", image: "" },
-            { id: 2, name: "Nasi Ayam Geprek", price: 25000, desc: "", image: "" },
-            { id: 3, name: "Nasi Ayam Bakar Madu", price: 35000, desc: "", image: "" },
-            { id: 4, name: "Nasi Ayam Teriyaki", price: 30000, desc: "", image: "" },
-            { id: 5, name: "Nasi Ayam Katsu", price: 30000, desc: "", image: "" },
-            { id: 6, name: "Nasi Daging Lada Hitam", price: 40000, desc: "", image: "" },
-            { id: 7, name: "Sate Ayam + Lontong", price: 28000, desc: "", image: "" },
-            { id: 8, name: "Spaghetti Bolognese", price: 27000, desc: "", image: "" },
-            { id: 9, name: "Spaghetti Carbonara", price: 27000, desc: "", image: "" },
-            { id: 10, name: "Beef Burger", price: 30000, desc: "", image: "" },
-            { id: 11, name: "Chicken Burger", price: 25000, desc: "", image: "" },
-            { id: 12, name: "Club Sandwich", price: 25000, desc: "", image: "" },
-            { id: 13, name: "Chicken Wings (BBQ / Spicy)", price: 28000, desc: "", image: "" },
+            { id: 1, name: "Nasi Goreng Spesial", price: 35000, desc: "", image: "" },
+            { id: 2, name: "Nasi Ayam Geprek", price: 30000, desc: "", image: "" },
+            { id: 3, name: "Nasi Ayam Bakar Madu", price: 42000, desc: "", image: "" },
+            { id: 4, name: "Chicken Teriyaki Rice", price: 40000, desc: "", image: "" },
+            { id: 5, name: "Chicken Katsu Rice", price: 38000, desc: "", image: "" },
+            { id: 6, name: "Beef Blackpepper Rice", price: 45000, desc: "", image: "" },
+            { id: 7, name: "Sate Ayam + Lontong", price: 38000, desc: "", image: "" },
+            { id: 8, name: "Spaghetti Bolognese", price: 42000, desc: "", image: "" },
+            { id: 9, name: "Spaghetti Carbonara", price: 45000, desc: "", image: "" },
+            { id: 10, name: "Beef Burger", price: 35000, desc: "", image: "" },
+            { id: 11, name: "Chicken Burger", price: 30000, desc: "", image: "" },
+            { id: 12, name: "Club Sandwich", price: 32000, desc: "", image: "" },
+            { id: 13, name: "Chicken Wings (BBQ / Spicy)", price: 34000, desc: "", image: "" },
             { id: 14, name: "French Fries (Kentang Goreng)", price: 20000, desc: "", image: "" }
         ],
         jajanan: [
             { id: 101, name: "Tahu Crispy", price: 15000, desc: "", image: "" },
             { id: 102, name: "Cireng Isi Ayam", price: 18000, desc: "", image: "" },
-            { id: 103, name: "Siomay Mini", price: 28000, desc: "", image: "" },
-            { id: 104, name: "Dim Sum Ayam", price: 25000, desc: "", image: "" },
+            { id: 103, name: "Siomay Mini", price: 20000, desc: "", image: "" },
+            { id: 104, name: "Dim Sum Ayam", price: 22000, desc: "", image: "" },
             { id: 105, name: "Mozzarella Sticks", price: 25000, desc: "", image: "" },
             { id: 106, name: "Pisang Goreng Crispy", price: 15000, desc: "", image: "" },
-            { id: 107, name: "Roti Bakar Coklat Keju", price: 22000, desc: "", image: "" },
-            { id: 108, name: "Roti Bakar Tiramisu", price: 22000, desc: "", image: "" },
+            { id: 107, name: "Roti Bakar Coklat Keju", price: 18000, desc: "", image: "" },
+            { id: 108, name: "Roti Bakar Tiramisu", price: 20000, desc: "", image: "" },
             { id: 109, name: "Donat Glaze", price: 12000, desc: "", image: "" },
             { id: 110, name: "Donat Coklat", price: 12000, desc: "", image: "" },
             { id: 111, name: "Churros + Saus Coklat", price: 22000, desc: "", image: "" },
@@ -1295,18 +1296,18 @@
             { id: 201, name: "Air Mineral", price: 8000, desc: "", image: "" },
             { id: 202, name: "Es Teh Manis", price: 10000, desc: "", image: "" },
             { id: 203, name: "Lemon Tea (Hot/Ice)", price: 15000, desc: "", image: "" },
-            { id: 204, name: "Americano", price: 18000, desc: "", image: "" },
-            { id: 205, name: "Cappuccino", price: 20000, desc: "", image: "" },
+            { id: 204, name: "Americano", price: 20000, desc: "", image: "" },
+            { id: 205, name: "Cappuccino", price: 25000, desc: "", image: "" },
             { id: 206, name: "Cafe Latte", price: 25000, desc: "", image: "" },
-            { id: 207, name: "Vanilla Latte", price: 25000, desc: "", image: "" },
-            { id: 208, name: "Caramel Macchiato", price: 27000, desc: "", image: "" },
-            { id: 209, name: "Chocolate Latte", price: 27000, desc: "", image: "" },
-            { id: 210, name: "Green Tea Latte", price: 25000, desc: "", image: "" },
-            { id: 211, name: "Matcha Latte", price: 25000, desc: "", image: "" },
-            { id: 212, name: "Thai Tea", price: 18000, desc: "", image: "" },
-            { id: 213, name: "Jus Jeruk", price: 15000, desc: "", image: "" },
-            { id: 214, name: "Jus Mangga", price: 15000, desc: "", image: "" },
-            { id: 215, name: "Jus Alpukat", price: 17000, desc: "", image: "" },
+            { id: 207, name: "Vanilla Latte", price: 28000, desc: "", image: "" },
+            { id: 208, name: "Caramel Macchiato", price: 30000, desc: "", image: "" },
+            { id: 209, name: "Chocolate Latte", price: 28000, desc: "", image: "" },
+            { id: 210, name: "Green Tea Latte", price: 28000, desc: "", image: "" },
+            { id: 211, name: "Matcha Latte", price: 30000, desc: "", image: "" },
+            { id: 212, name: "Thai Tea", price: 22000, desc: "", image: "" },
+            { id: 213, name: "Jus Jeruk", price: 18000, desc: "", image: "" },
+            { id: 214, name: "Jus Mangga", price: 20000, desc: "", image: "" },
+            { id: 215, name: "Jus Alpukat", price: 22000, desc: "", image: "" },
             { id: 216, name: "Strawberry Milkshake", price: 25000, desc: "", image: "" },
             { id: 217, name: "Chocolate Milkshake", price: 25000, desc: "", image: "" }
         ]
@@ -1318,8 +1319,8 @@
         { name: "Nasi Daging Lada Hitam", price: 40000, rating: 4.8, image: "lada hitam.jpg" },
         { name: "Nasi Ayam Teriyaki", price: 30000, rating: 4.8, image: "teriyaki.jpg" },
         { name: "Roti Bakar Coklat Keju", price: 22000, rating: 4.9, image: "Roti Bakar.jpg" },
-        { name: "Caffe Latte", price: 25000, rating: 4.8, image: "caffe.jpg" },
-        { name: "Matcha Latte", price: 25000, rating: 4.7, image: "matcha.jpg" }
+        { name: "Caffe Latte", price: 18000, rating: 4.8, image: "caffe.jpg" },
+        { name: "Matcha Latte", price: 18000, rating: 4.7, image: "matcha.jpg" }
     ];
 
     let cart = [];
